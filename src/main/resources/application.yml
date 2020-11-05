@@ -1,1 +1,42 @@
-
+#spring.datasource.driver-class-name = com.alibaba.druid.proxy.DruidDriver
+#spring.datasource.url = jdbc:mysql://localhost:3306/t_3?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=true&allowMultiQueries=true
+#spring.datasource.username = root
+#spring.datasource.password = 123987
+#
+#  #选择druid数据源
+#spring.datasource.type = com.alibaba.druid.pool.DruidDataSource
+#  #初始化连接大小
+#spring.datasource.druid.initial-size = 10
+#  #最小连接池数量
+#spring.datasource.druid.min-idle = 5
+#  #最大连接池数量
+#spring.datasource.druid.max-active = 800
+#  #获取连接时最大等待时间，单位毫秒，配置了此属性缺省启用公平锁，并发效率会有所下降
+#spring.datasource.druid.max-wait = 60000
+#  #连接保持空闲而不被驱逐的最长时间
+#spring.datasource.druid.min-evictable-idle-time-millis = 300000
+#  #配置拦截器，监控统计，防御SQL注入，日志
+#spring.datasource.druid.filters = stat, wall, slf4j
+#  #开启mergeSQL功能
+#spring.datasource.druid.filter.stat.merge-sql = true
+#  #开启慢SQL日志记录
+#spring.datasource.druid.filter.stat.log-slow-sql = true
+#  #配置慢SQL阈值
+#spring.datasource.druid.filter.stat.slow-sql-millis = 5000
+#  #验证数据库连接的有效性，不同数据库配置有所不同，此配置对应MySQL
+#spring.datasource.druid.validation-query = SELECT 1
+#  #配置检测空闲连接的间隔时间，检测需要关闭的空闲连接，单位是毫秒
+#spring.datasource.druid.time-between-eviction-runs-millis = 60000
+#  #申请连接时检测，建议配置为true，不影响性能，并且保持安全性
+#spring.datasource.druid.test-while-idle = true
+#  #获取连接时检测
+#spring.datasource.druid.test-on-borrow = false
+#  #归还连接时检测
+#spring.datasource.druid.test-on-return = false
+#  #配置PSCache，对支持游标的数据库性能提升巨大，MySQL建议关闭，Oracle建议开启
+#spring.datasource.druid.pool-prepared-statements = false
+#  #开启PSCache生效，每个连接上PSCache的大小
+#spring.datasource.druid.max-pool-prepared-statement-per-connection-size = 20
+#  #合并多个DruidDataSource的监控数据
+#spring.datasource.druid.use-global-data-source-stat = true
+#
