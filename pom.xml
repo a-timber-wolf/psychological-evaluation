@@ -19,6 +19,8 @@
 
     <modules>
         <module>eureka-server</module>
+        <module>service-a</module>
+        <module>service-b</module>
     </modules>
 
     <properties>
