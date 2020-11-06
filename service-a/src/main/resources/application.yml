@@ -19,3 +19,7 @@ eureka:
     #使用ip地址注册到注册中心
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
+
+feign:
+  hystrix:
+    enabled: false
