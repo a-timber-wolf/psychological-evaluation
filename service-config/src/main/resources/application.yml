@@ -16,5 +16,7 @@ spring:
         git:
           uri: https://github.com/a-timber-wolf/spring-cloud-config.git
           search-paths: config
+          force-pull: true
       #git主分支
       label: main
+      profile: dev
