@@ -1,0 +1,20 @@
+server:
+  port: 8088
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8081/eureka
+
+spring:
+  application:
+    name: service-config
+  #配置存储地址（git）
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/a-timber-wolf/spring-cloud-config.git
+          search-paths: config
+      #git主分支
+      label: main

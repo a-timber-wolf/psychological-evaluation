@@ -17,10 +17,6 @@ public class TestController {
     @Value("${server.port}")
     private String port;
 
-    String fallback() {
-        return "服务器繁忙";
-    }
-
     @HystrixCommand(fallbackMethod = "fallback")
     @RequestMapping("/hello")
     public String sayHello() {
@@ -42,6 +38,9 @@ public class TestController {
         return "我是其他服务";
     }
 
+    String fallback() {
+        return "服务器繁忙";
+    }
 
 
 }
