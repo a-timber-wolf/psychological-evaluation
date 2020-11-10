@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8081/eureka
+      defaultZone: http://127.0.0.1:8081/eureka/
 
 spring:
   application:
@@ -20,3 +20,6 @@ spring:
       #git主分支
       label: main
       profile: dev
+    loadbalancer:
+      ribbon:
+        enabled: false

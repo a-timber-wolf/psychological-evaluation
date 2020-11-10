@@ -4,11 +4,15 @@ server:
 spring:
   application:
     name: service-zuul
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
 
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8081/eureka
+      defaultZone: http://127.0.0.1:8081/eureka/
 
 zuul:
   routes:
