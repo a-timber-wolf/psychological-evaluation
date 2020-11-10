@@ -23,12 +23,7 @@ public class TestController {
 
         System.out.println("threadName:" + Thread.currentThread().getName());
 
-//        try {
-//            Thread.sleep(5000);
-//        } catch (InterruptedException e) {
-//            System.out.println("catch");
-//            log.info(e.getMessage(),e);
-//        }
+        //log.info(e.getMessage(),e);
 
         return "Hello world " + "端口：" + port;
     }
@@ -41,8 +36,5 @@ public class TestController {
     String fallback() {
         return "服务器繁忙";
     }
-
-
-
 
 }
